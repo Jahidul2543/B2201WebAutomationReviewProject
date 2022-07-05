@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: pageobjectstests.ContactUsPageTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.13 s <<< FAILURE! - in pageobjectstests.ContactUsPageTest
+sendTextTest(pageobjectstests.ContactUsPageTest)  Time elapsed: 2.306 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Mds-MBP-2.lan', ip: '2603:8081:1500:8b3d:0:0:0:1e47%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_275'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/fz/hhj1dql16bj...}, goog:chromeOptions: {debuggerAddress: localhost:60510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 841a1825c0ead7960e60e439f8910041
+	at pageobjectstests.ContactUsPageTest.sendTextTest(ContactUsPageTest.java:23)
+

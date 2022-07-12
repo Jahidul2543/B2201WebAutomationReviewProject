@@ -23,10 +23,10 @@ public class ContactUs {
     WebElement dropdown;
 
 
-    public String contactUsFormSubmission(){
-        messageBox.sendKeys("Hello I am testing");
-        emailBox.sendKeys("myemail@gmail.com");
-        ApplicationHelper.selectByIndex(dropdown,1 );
+    public String contactUsFormSubmission(String textToSend, String email, int indexNumber){
+        messageBox.sendKeys(textToSend);
+        emailBox.sendKeys(email);
+        ApplicationHelper.selectByIndex(dropdown,indexNumber );
         submitButton.click();
         String actualMessage  = message.getText();
         // Using reporting Package from utilities module
@@ -35,5 +35,7 @@ public class ContactUs {
         return actualMessage;
 
     }
+
+
 
 }

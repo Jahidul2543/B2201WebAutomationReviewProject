@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="pageobjectstests.ContactUsPageTest" hash-for-method="sendTextTest">sendTextTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="pageobjectstests.ContactUsPageTest" hash-for-method="sendTextTest(j@gmai.com, Hello hi, Your message has been successfully sent to our team.)">sendTextTest(j@gmai.com, Hello hi, Your message has been successfully sent to our team.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="pageobjectstests.ContactUsPageTest" hash-for-method="sendTextTest(h@hox.com, Lets visit....., Your message has been successfully sent to our team.)">sendTextTest(h@hox.com, Lets visit....., Your message has been successfully sent to our team.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="pageobjectstests.ContactUsPageTest" hash-for-method="sendTextTest(k@kmail.com, How are you, Your message has been successfully sent to our team.)">sendTextTest(k@kmail.com, How are you, Your message has been successfully sent to our team.)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -125,16 +135,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sendTextTest">
-                  </a> <!-- sendTextTest -->
+                  <a name="sendTextTest(j@gmai.com, Hello hi, Your message has been successfully sent to our team.)">
+                  </a> <!-- sendTextTest(j@gmai.com, Hello hi, Your message has been successfully sent to our team.) -->
                   <span class="method-name">sendTextTest</span>
+                  <span class="parameters">(j@gmai.com, Hello hi, Your message has been successfully sent to our team.)</span>
                   <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.53)
+  (Session info: chrome=103.0.5060.114)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Mds-MBP-2.lan&apos;, ip: &apos;2603:8081:1500:8b3d:0:0:0:1e47%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_275&apos;
+System info: host: &apos;EC2AMAZ-FMDF17C&apos;, ip: &apos;172.31.9.235&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/fz/hhj1dql16bj...}, goog:chromeOptions: {debuggerAddress: localhost:60510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 841a1825c0ead7960e60e439f8910041
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dfd11b085ede9f2d25b0ecd6bfbb2a69
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -144,9 +155,67 @@ Session ID: 841a1825c0ead7960e60e439f8910041
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at pageobjects.HomePage.goToContactUsPage(HomePage.java:16)
-	at pageobjectstests.ContactUsPageTest.sendTextTest(ContactUsPageTest.java:23)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at pageobjects.HomePage.goToContactUsPage(HomePage.java:15)
+	at pageobjectstests.ContactUsPageTest.sendTextTest(ContactUsPageTest.java:40)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendTextTest(h@hox.com, Lets visit....., Your message has been successfully sent to our team.)">
+                  </a> <!-- sendTextTest(h@hox.com, Lets visit....., Your message has been successfully sent to our team.) -->
+                  <span class="method-name">sendTextTest</span>
+                  <span class="parameters">(h@hox.com, Lets visit....., Your message has been successfully sent to our team.)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EC2AMAZ-FMDF17C&apos;, ip: &apos;172.31.9.235&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58229}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8887184a9efba1b2c3ef07259b0e7a9
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at pageobjects.HomePage.goToContactUsPage(HomePage.java:15)
+	at pageobjectstests.ContactUsPageTest.sendTextTest(ContactUsPageTest.java:40)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendTextTest(k@kmail.com, How are you, Your message has been successfully sent to our team.)">
+                  </a> <!-- sendTextTest(k@kmail.com, How are you, Your message has been successfully sent to our team.) -->
+                  <span class="method-name">sendTextTest</span>
+                  <span class="parameters">(k@kmail.com, How are you, Your message has been successfully sent to our team.)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EC2AMAZ-FMDF17C&apos;, ip: &apos;172.31.9.235&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58205}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b706c641dae6c8160ebd5edc9fc78cd5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at pageobjects.HomePage.goToContactUsPage(HomePage.java:15)
+	at pageobjectstests.ContactUsPageTest.sendTextTest(ContactUsPageTest.java:40)
 ... Removed 38 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -204,16 +273,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'sendTextTest')
 data.setCell(0, 2, 'pageobjectstests.ContactUsPageTest')
-data.setCell(0, 3, 2297);
+data.setCell(0, 3, 1524);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'sendTextTest')
+data.setCell(1, 2, 'pageobjectstests.ContactUsPageTest')
+data.setCell(1, 3, 991);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'sendTextTest')
+data.setCell(2, 2, 'pageobjectstests.ContactUsPageTest')
+data.setCell(2, 3, 630);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -241,38 +318,90 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">pageobjectstests.ContactUsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">extentSetup(org.testng.TestRunner@6187d1f5)</span>
+                <span class="method-name">extentSetup(org.testng.TestRunner@64a896b0)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">161 ms</span>
+                <span class="method-start">907 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">startExtent(public void pageobjectstests.ContactUsPageTest.sendTextTest())</span>
-                <span class="method-start">5778 ms</span>
+                <span class="method-name">startExtent(public void pageobjectstests.ContactUsPageTest.sendTextTest(java.lang.String,java.lang.String,java.l...)</span>
+                <span class="method-start">5994 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializeElement</span>
-                <span class="method-start">5782 ms</span>
+                <span class="method-start">5999 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">sendTextTest</span>
-                <span class="method-start">5802 ms</span>
+                <span class="method-name">sendTextTest(j@gmai.com, Hello hi, Your message has been successfully sent to our team.)</span>
+                <span class="method-start">6029 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=sendTextTest status=FAILURE method=ContactUsPageTest.sendTextTest()[pri:0, instance...)</span>
-                <span class="method-start">8106 ms</span>
+                <span class="method-name">afterEachTestMethod([TestResult name=sendTextTest status=FAILURE method=ContactUsPageTest.sendTextTest(java.lang.String,...)</span>
+                <span class="method-start">7029 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">cleanUP</span>
-                <span class="method-start">8902 ms</span>
+                <span class="method-start">8373 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">8373 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void pageobjectstests.ContactUsPageTest.sendTextTest(java.lang.String,java.lang.String,java.l...)</span>
+                <span class="method-start">11545 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeElement</span>
+                <span class="method-start">11546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">sendTextTest(k@kmail.com, How are you, Your message has been successfully sent to our team.)</span>
+                <span class="method-start">11547 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=sendTextTest status=FAILURE method=ContactUsPageTest.sendTextTest(java.lang.String,...)</span>
+                <span class="method-start">12182 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">13334 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">13334 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void pageobjectstests.ContactUsPageTest.sendTextTest(java.lang.String,java.lang.String,java.l...)</span>
+                <span class="method-start">16501 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeElement</span>
+                <span class="method-start">16501 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">sendTextTest(h@hox.com, Lets visit....., Your message has been successfully sent to our team.)</span>
+                <span class="method-start">16503 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=sendTextTest status=FAILURE method=ContactUsPageTest.sendTextTest(java.lang.String,...)</span>
+                <span class="method-start">18028 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">19163 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">generateReport</span>
-                <span class="method-start">8923 ms</span>
+                <span class="method-start">19194 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

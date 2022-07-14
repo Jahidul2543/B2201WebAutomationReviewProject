@@ -1,15 +1,37 @@
 -------------------------------------------------------------------------------
 Test set: pageobjectstests.ContactUsPageTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.13 s <<< FAILURE! - in pageobjectstests.ContactUsPageTest
-sendTextTest(pageobjectstests.ContactUsPageTest)  Time elapsed: 2.306 s  <<< FAILURE!
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 19.647 s <<< FAILURE! - in pageobjectstests.ContactUsPageTest
+sendTextTest(pageobjectstests.ContactUsPageTest)  Time elapsed: 1.134 s  <<< FAILURE!
 org.openqa.selenium.WebDriverException: 
 unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.53)
+  (Session info: chrome=103.0.5060.114)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Mds-MBP-2.lan', ip: '2603:8081:1500:8b3d:0:0:0:1e47%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_275'
+System info: host: 'EC2AMAZ-FMDF17C', ip: '172.31.9.235', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/fz/hhj1dql16bj...}, goog:chromeOptions: {debuggerAddress: localhost:60510}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 841a1825c0ead7960e60e439f8910041
-	at pageobjectstests.ContactUsPageTest.sendTextTest(ContactUsPageTest.java:23)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58180}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dfd11b085ede9f2d25b0ecd6bfbb2a69
+	at pageobjectstests.ContactUsPageTest.sendTextTest(ContactUsPageTest.java:40)
+
+sendTextTest(pageobjectstests.ContactUsPageTest)  Time elapsed: 0.733 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-FMDF17C', ip: '172.31.9.235', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58205}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b706c641dae6c8160ebd5edc9fc78cd5
+	at pageobjectstests.ContactUsPageTest.sendTextTest(ContactUsPageTest.java:40)
+
+sendTextTest(pageobjectstests.ContactUsPageTest)  Time elapsed: 1.618 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-FMDF17C', ip: '172.31.9.235', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58229}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8887184a9efba1b2c3ef07259b0e7a9
+	at pageobjectstests.ContactUsPageTest.sendTextTest(ContactUsPageTest.java:40)
 

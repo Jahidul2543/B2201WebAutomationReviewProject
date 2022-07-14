@@ -8,7 +8,7 @@
           <include name="setUp"/>
           <include name="startExtent"/>
           <include name="cleanUP"/>
-          <include name="sendTextTest"/>
+          <include name="sendTextTest" invocation-numbers="0 1 2"/>
           <include name="extentSetup"/>
           <include name="generateReport"/>
           <include name="initializeElement"/>

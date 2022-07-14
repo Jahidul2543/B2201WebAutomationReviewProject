@@ -1,4 +1,4 @@
-helper/ApplicationHelper.class
-pageobjects/ContactUs.class
-pageobjectstests/ContactUsPageTest.class
-pageobjects/HomePage.class
+pageobjects\HomePage.class
+helper\ApplicationHelper.class
+pageobjects\ContactUs.class
+pageobjectstests\ContactUsPageTest.class

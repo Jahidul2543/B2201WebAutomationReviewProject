@@ -29,7 +29,7 @@ public class ContactUsPageTest extends BrowserDriver {
    @DataProvider
     public Object[][]  dataProvider() throws Exception {
         MyDataReader myDataReader = new MyDataReader();
-        String filePath = "/Users/jahidul/IdeaProjects/B2201WebAutomationReviewProject/automationpractice/testData/testdataContactUs.xlsx";
+        String filePath = "C:\\Users\\Administrator\\projects\\B2201WebAutomationReviewProject\\automationpractice\\testData\\testdataContactUs.xlsx";
         myDataReader.setExcelFile(filePath);
         Object[][]  data = myDataReader.getExcelSheetData("Sheet1");
         return data;
